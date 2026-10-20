@@ -1,24 +1,25 @@
-# Manoranjan Singh — Executive Portfolio V18
+# Manoranjan Singh — V19 Executive Intelligence Website
 
-GitHub Pages-ready executive portfolio for manoranjansingh.in.
+Premium static executive portfolio for GitHub Pages / Cloudflare Pages.
 
-## Included
-- Premium dark/light executive interface
-- Transmission-tower-only background slideshow with subtle light sweep
-- Project filters and interactive project detail modal
-- Awards gallery/lightbox
-- Career timeline and 10-region work footprint
-- Executive resume PDF
+## V19 highlights
+- DGM & Above positioning
+- Premium navy/gold executive UI with dark/light mode
 - Responsive mobile navigation
-- Dussehra banner that displays only on 20 October 2026
-- SEO metadata, robots.txt, sitemap.xml and web manifest
-- GitHub Actions workflow for Pages deployment
-- Custom domain file: CNAME
+- Transmission-only hero background slideshow
+- Executive KPIs and snapshot
+- Interactive project portfolio with filters and detail modal
+- Career timeline and 10-region India footprint
+- Awards lightbox
+- **One and only one Spotlight / Xtra Mile presentation photo**: `xtra-mile-spotlight-award-2025.jpg`
+- WOD-2024 recognition photo retained as a separate award
+- WhatsApp, LinkedIn, email and resume CTAs
+- PWA manifest, sitemap, robots.txt and custom 404 page
+- Dussehra banner date logic for 20 October 2026 only
+- V19 scroll-progress indicator, active navigation, accessibility skip link and phone copy action
 
 ## Deploy
-Repository root should contain `index.html` and all listed assets. In GitHub: Settings → Pages → Source: GitHub Actions.
+Upload all files to the root of the repository. `index.html` must remain at the root.
 
-If the custom domain is already configured, keep `manoranjansingh.in` in Pages settings and keep the DNS records for any email service (including Google Workspace) unchanged.
-
-## Profile photo
-If your existing GitHub root already contains `manoranjan-profile.jpg`, V18 will display it automatically. If it is absent, the hero safely falls back to the `MS` executive monogram instead of showing a broken image.
+## Custom domain
+The included `CNAME` targets `manoranjansingh.in`.
