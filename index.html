@@ -43,11 +43,41 @@
 .dussehra-content{position:relative;z-index:2;display:flex;align-items:center;gap:12px;text-align:center}.dussehra-content strong{color:#ffd34e;font-size:16px;letter-spacing:.6px}.dussehra-content small{font-size:11px;opacity:.9}.dussehra-close{position:absolute;right:14px;top:8px;border:0;background:rgba(0,0,0,.25);color:#fff;width:30px;height:30px;border-radius:50%;font-size:21px;cursor:pointer}.dussehra-glow{position:absolute;left:-25%;top:0;width:18%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,220,90,.9),transparent);transform:skewX(-18deg);animation:dussehraSweep 3.8s ease-in-out infinite}@keyframes dussehraSweep{0%,20%{left:-25%;opacity:0}35%{opacity:1}70%,100%{left:115%;opacity:0}}body{padding-top:48px}
 .trophy-award{margin-top:24px}.trophy-award img{width:100%;height:260px;object-fit:contain;background:#f4f5fb;border-radius:12px}.award-badge{display:inline-block;margin-top:10px;padding:6px 10px;border:1px solid #ffd34e;border-radius:999px;color:#ffd34e}
 @media(max-width:700px){.dussehra-content{gap:7px;padding:0 40px 0 18px}.dussehra-content strong{font-size:14px}.dussehra-content small{font-size:9px}}
+
+.spotlight-photo-award .award-image-wrap{position:relative}
+.spotlight-photo-award .award-image-wrap img{
+  width:100%;height:300px;object-fit:cover;border-radius:12px;
+  display:block;background:#f4f5fb;
+}
+.spotlight-photo-award .award-badge{
+  position:absolute;left:12px;bottom:12px;
+  background:rgba(5,13,26,.90);color:#ffd34e;
+  border:1px solid rgba(255,211,78,.75);padding:7px 11px;
+  border-radius:999px;font-size:12px;font-weight:700;
+}
+
+
+/* V16 Executive Dynamic enhancements */
+.v16-controls{display:flex;gap:8px;align-items:center;margin-left:auto}
+.v16-control{border:1px solid rgba(255,211,78,.35);background:rgba(255,255,255,.06);color:inherit;border-radius:999px;padding:7px 11px;font-size:11px;cursor:pointer;backdrop-filter:blur(10px);transition:.25s}
+.v16-control:hover{transform:translateY(-2px);border-color:#ffd34e}
+.v16-section{padding:72px 6%;position:relative}.v16-section .section-head{max-width:850px;margin:0 auto 30px;text-align:center}.v16-section .eyebrow{letter-spacing:2px;color:#ffd34e;font-size:11px;font-weight:800}
+.v16-section h2{margin:8px 0 10px}.v16-snapshot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1200px;margin:auto}
+.v16-stat{padding:24px;border:1px solid rgba(255,211,78,.16);border-radius:18px;background:rgba(255,255,255,.045);box-shadow:0 14px 40px rgba(0,0,0,.16);transition:.3s}.v16-stat:hover{transform:translateY(-6px);border-color:rgba(255,211,78,.5)}
+.v16-stat span{display:block;font-size:30px;font-weight:900;color:#ffd34e}.v16-stat b{display:block;margin-top:7px}.v16-stat small{opacity:.7}
+.v16-focus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1200px;margin:20px auto 0}.v16-focus-grid>div{padding:22px;border-radius:18px;background:linear-gradient(145deg,rgba(255,211,78,.08),rgba(255,255,255,.035));border:1px solid rgba(255,255,255,.08)}.v16-focus-grid strong{color:#ffd34e}.v16-focus-grid p{margin:8px 0 0;opacity:.8;line-height:1.6}
+.v16-value{background:linear-gradient(180deg,transparent,rgba(255,211,78,.025))}.v16-value-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1200px;margin:auto}.v16-value-grid>div{padding:24px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);transition:.3s}.v16-value-grid>div:hover{transform:translateY(-5px)}.v16-value-grid span{font-size:12px;color:#ffd34e;font-weight:800}.v16-value-grid h3{margin:9px 0 7px}.v16-value-grid p{opacity:.78;line-height:1.55}
+.v16-clock{font-size:10px;opacity:.65;margin-left:6px;white-space:nowrap}
+body.v16-light{background:#f5f7fb;color:#162033}body.v16-light .v16-stat,body.v16-light .v16-focus-grid>div,body.v16-light .v16-value-grid>div{background:#fff;border-color:rgba(12,34,58,.10);box-shadow:0 10px 30px rgba(15,30,55,.08)}
+body.v16-light .v16-control{color:#162033;background:#fff}
+@media(max-width:900px){.v16-snapshot-grid{grid-template-columns:repeat(2,1fr)}.v16-focus-grid,.v16-value-grid{grid-template-columns:1fr 1fr}.v16-controls,.v16-clock{display:none}}
+@media(max-width:600px){.v16-section{padding:52px 5%}.v16-snapshot-grid,.v16-focus-grid,.v16-value-grid{grid-template-columns:1fr}.v16-stat span{font-size:26px}}
+@media print{.dussehra-banner,.v16-controls,.flash,.bg{display:none!important}body{padding-top:0!important;background:#fff!important;color:#111!important}.hero{min-height:auto!important;background:#fff!important}}
 </style></head>
 <body>
 <div id="dussehraBanner" class="dussehra-banner">
 <div class="dussehra-glow"></div><div class="dussehra-content"><span>🏹</span><strong>Happy Dussehra</strong><small>Victory of good over evil • Peace, prosperity & success</small><span>🪔</span></div><button class="dussehra-close" aria-label="Close">×</button></div>
-<nav class="nav"><div class="container navin"><a class="logo" href="#home"><b>MS</b><span>Manoranjan Singh<small>AGM / Chief Project Manager · Power Transmission</small></span></a><button class="menu" id="menu">☰</button><div class="links" id="links"><a href="#home">Home</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#awards">Awards</a><a href="#career">Career</a><a href="#contact">Contact</a></div></div></nav>
+<nav class="nav"><div class="container navin"><a class="logo" href="#home"><b>MS</b><span>Manoranjan Singh<small>AGM / Chief Project Manager · Power Transmission</small></span></a><button class="menu" id="menu">☰</button><div class="links" id="links"><a href="#home">Home</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#awards">Awards</a><a href="#career">Career</a><a href="#contact">Contact</a></div></div><div class="v16-controls"><button id="themeToggle" class="v16-control" type="button">☀︎ / ☾</button><button id="printProfile" class="v16-control" type="button">Print Profile</button></div></nav>
 
 <section class="hero" id="home"><div class="bg">
 <div class="bg-frame tower-frame-1"></div>
@@ -64,6 +94,24 @@
 
 <section id="expertise"><div class="container"><div class="head reveal"><div class="kicker">Technical Expertise</div><h2>Transmission capability across voltage classes.</h2></div><div class="three"><div class="card reveal"><h3>132 / 220 kV</h3><p>Transmission line execution, foundations, tower erection, stringing and project controls.</p></div><div class="card reveal"><h3>400 kV</h3><p>High-voltage transmission execution with ROW, construction and stakeholder coordination.</p></div><div class="card reveal"><h3>765 kV / ±800 kV HVDC</h3><p>Large-scale EHV / HVDC project exposure, execution planning and construction leadership.</p></div><div class="card reveal"><h3>TBCB / EPC</h3><p>Project governance, commercial interface, developer / EPC coordination and transmission-license environment.</p></div><div class="card reveal"><h3>ROW & Compensation</h3><p>ROW strategy, landowner / local stakeholder coordination and compensation tracking.</p></div><div class="card reveal"><h3>Planning & Controls</h3><p>Master planning, productivity, manpower, T&P, billing, cost and dashboard-based monitoring.</p></div></div></div></section>
 
+
+<section class="v16-section" id="snapshot">
+  <div class="section-head"><span class="eyebrow">EXECUTIVE SNAPSHOT</span>
+  <h2>Leadership at a Glance</h2>
+  <p>A concise view of project scale, technical range and execution leadership.</p></div>
+  <div class="v16-snapshot-grid">
+    <article class="v16-stat"><span>28+</span><b>Years Experience</b><small>Transmission & EPC leadership</small></article>
+    <article class="v16-stat"><span>25+</span><b>Lines Energized</b><small>Across multiple voltage levels</small></article>
+    <article class="v16-stat"><span>₹2,200 Cr+</span><b>Portfolio Exposure</b><small>Project execution portfolio</small></article>
+    <article class="v16-stat"><span>765 / ±800</span><b>Highest Voltage Exposure</b><small>765 kV AC / ±800 kV HVDC</small></article>
+  </div>
+  <div class="v16-focus-grid">
+    <div><strong>Current Focus</strong><p>TBCB transmission project leadership, construction, planning, ROW, contracts, vendors, safety and quality.</p></div>
+    <div><strong>Execution Philosophy</strong><p>Safety first • quality by design • disciplined planning • transparent controls • timely commissioning.</p></div>
+    <div><strong>Leadership Style</strong><p>Field-oriented, accountable and coordination-driven across client, contractor, engineering, commercial and site teams.</p></div>
+  </div>
+</section>
+
 <section id="projects"><div class="container"><div class="head reveal"><div class="kicker">Major Project Portfolio</div><h2>Selected project experience.</h2></div><div class="three"><div class="card reveal"><div class="kicker">01 · CURRENT</div><h3>NES Dharashiv Transmission Limited</h3><p>TBCB transmission project in Maharashtra covering the Washi / Dharashiv project environment.</p></div><div class="card reveal"><div class="kicker">02 · 765 kV</div><h3>KPS-III – Lakadia</h3><p>765 kV D/C Khavda–Lakadia transmission line execution with tower erection, stringing, T&P and site controls.</p></div><div class="card reveal"><div class="kicker">03 · MP</div><h3>MP Transmission Projects</h3><p>Package-based transmission execution across multiple Madhya Pradesh clusters.</p></div><div class="card reveal"><div class="kicker">04 · 400 kV</div><h3>400 kV Transmission Projects</h3><p>High-voltage line execution, construction management and stakeholder coordination.</p></div><div class="card reveal"><div class="kicker">05 · 132 / 220 kV</div><h3>Transmission Projects</h3><p>Multi-voltage project experience spanning foundations, erection, stringing and completion.</p></div><div class="card reveal"><div class="kicker">06 · HVDC</div><h3>±800 kV HVDC Exposure</h3><p>Large-scale HVDC environment and high-voltage transmission project experience.</p></div></div></div></section>
 
 <section id="awards" class="awards"><div class="container"><div class="head reveal"><div class="kicker">Awards & Recognition</div><h2>Recognition for performance & leadership.</h2><p>Professional recognitions received for achievement, dedication and commitment to organizational values.</p></div><div class="award-grid">
@@ -71,11 +119,36 @@
 <article class="award reveal"><div class="award-img"><img data-cert src="./certificate-of-appreciation-2025.jpg" alt="Certificate of Appreciation — Manoranjan Singh"></div><div class="award-body"><span class="year">2025</span><h3>Certificate of Appreciation</h3><h4>Outstanding Achievement</h4><p>Recognition for outstanding achievement, hard work and dedication.</p><div class="meta"><strong>Jyoti Structures Limited</strong><span>31 July 2025</span></div><a class="view" href="./certificate-of-appreciation-2025.jpg" target="_blank">View Certificate →</a></div></article>
 <article class="award reveal"><div class="award-img"><img data-cert src="./value-champion-2018.jpg" alt="Value Champion 2018 — Manoranjan Singh"></div><div class="award-body"><span class="year">2018</span><h3>VALUE CHAMPION–2018</h3><h4>Commitment to Core Values</h4><p>Recognized for exemplary commitment to core values in TL (Accounts & Commercial) Projects.</p><div class="meta"><strong>Value Champion Recognition</strong><span>24 December 2018</span></div><a class="view" href="./value-champion-2018.jpg" target="_blank">View Certificate →</a></div></article>
 </div></div><div class="award-card trophy-award"><img src="./award-wod-2024-runner-up.jpg" alt="2nd Runner Up WOD-2024 Quiz Competition"><span class="award-badge">🏆 2nd Runner Up</span><div class="award-meta">2024</div><h3>2nd Runner Up – WOD-2024</h3><div class="award-highlight">Quiz Competition</div><p>Recognition for securing 2nd Runner Up position in the WOD-2024 Quiz Competition at Jyoti Structures Limited.</p><span class="award-chip">Jyoti Structures Limited</span></div>
+
+<div class="award-card spotlight-photo-award">
+  <div class="award-image-wrap">
+    <img src="./spotlight-award-presentation-2025.jpg"
+         alt="Spotlight Award presented to Manoranjan Singh during World Quality Week 2025">
+    <span class="award-badge">⭐ Spotlight Award</span>
+  </div>
+  <div class="award-meta">30 November 2025</div>
+  <h3>Spotlight Award – Employee of the Month</h3>
+  <div class="award-highlight">Recognition for Excellence</div>
+  <p>Spotlight Award received from QHSE Head <strong>Mrs. Vandana Kudalkar</strong> and HR Head <strong>Mrs. Pragati Nagar</strong> during World Quality Week 2025.</p>
+  <span class="award-chip">Jyoti Structures Limited</span>
+</div>
+
 </section>
 
 <section id="career"><div class="container"><div class="head reveal"><div class="kicker">Career at a Glance</div><h2>A career shaped by transmission execution.</h2></div><div class="card timeline reveal"><div class="time"><i class="dot"></i><span>JUNE 2026 — PRESENT</span><h3>Montecarlo Limited</h3><p>AGM / Chief Project Manager — TBCB Transmission Project, Maharashtra.</p></div><div class="time"><i class="dot"></i><span>APRIL 2025 — MAY 2026</span><h3>Jyoti Structures Limited</h3><p>AGM – Projects — 765 kV D/C Khavda–Lakadia transmission line.</p></div><div class="time"><i class="dot"></i><span>DECEMBER 2022 — MARCH 2025</span><h3>Senior Manager – Projects</h3><p>Transmission project execution and construction leadership.</p></div><div class="time"><i class="dot"></i><span>EARLIER CAREER</span><h3>Transmission Project Leadership</h3><p>Progressive responsibility across EHV, HVDC and multi-location transmission projects.</p></div></div></div></section>
 
 <section><div class="container"><div class="head reveal"><div class="kicker">Professional Footprint</div><h2>Experience across major Indian regions.</h2></div><div class="tags reveal" style="gap:12px"><span class="tag">Gujarat</span><span class="tag">Maharashtra</span><span class="tag">Madhya Pradesh</span><span class="tag">Bihar</span><span class="tag">Uttar Pradesh</span><span class="tag">Delhi</span><span class="tag">Haryana</span><span class="tag">Uttarakhand</span><span class="tag">Jharkhand</span></div></div></section>
+
+
+<section class="v16-section v16-value" id="value">
+  <div class="section-head"><span class="eyebrow">EXECUTIVE VALUE</span><h2>What I Bring to a Project</h2></div>
+  <div class="v16-value-grid">
+    <div><span>01</span><h3>Project Control</h3><p>Milestone-driven planning, progress review and corrective action.</p></div>
+    <div><span>02</span><h3>Construction Leadership</h3><p>Strong site execution across foundations, erection and stringing activities.</p></div>
+    <div><span>03</span><h3>Commercial Discipline</h3><p>Vendor coordination, rate review, cost awareness and contract follow-up.</p></div>
+    <div><span>04</span><h3>Safety & Quality</h3><p>Field-level safety culture with quality-focused execution and compliance.</p></div>
+  </div>
+</section>
 
 <section id="contact" class="contact"><div class="container"><div class="head reveal"><div class="kicker">Executive Contact</div><h2>Let's discuss the next transmission challenge.</h2><p>Professional enquiries, project leadership opportunities and industry collaboration.</p></div><div class="contact-grid"><div class="card reveal"><div class="item"><small>EMAIL</small><a href="mailto:connect@manoranjansingh.in">connect@manoranjansingh.in</a></div><div class="item"><small>PHONE</small><a href="tel:+919456044444">+91 94560 44444</a></div><div class="item"><small>LINKEDIN</small><a href="https://www.linkedin.com/in/manoranjan-singh-99737855" target="_blank">LinkedIn Profile</a></div></div><div class="card reveal"><h3>Professional Profile</h3><p>For detailed experience, project portfolio and responsibilities, please refer to the executive resume.</p><div class="actions"><a class="btn primary" href="./Manoranjan_Singh_Resume.pdf" target="_blank">View Resume</a><a class="btn" href="https://wa.me/919456044444?text=Hello%20Manoranjan%20Sir%2C%20I%20visited%20your%20professional%20portfolio." target="_blank">WhatsApp</a></div></div></div></div></section>
 
@@ -86,4 +159,13 @@
 const m=document.getElementById('menu'),l=document.getElementById('links');m.onclick=()=>l.classList.toggle('open');document.querySelectorAll('.links a').forEach(a=>a.onclick=()=>l.classList.remove('open'));
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
 const lb=document.getElementById('lb'),lg=document.getElementById('large');document.querySelectorAll('[data-cert]').forEach(i=>i.onclick=()=>{lg.src=i.src;lb.classList.add('open')});document.getElementById('x').onclick=()=>lb.classList.remove('open');lb.onclick=e=>{if(e.target===lb)lb.classList.remove('open')};document.onkeydown=e=>{if(e.key==='Escape')lb.classList.remove('open')};
-</script><script>(function(){const b=document.getElementById("dussehraBanner");if(!b)return;const d=new Date();const show=d.getFullYear()===2026&&d.getMonth()===9&&d.getDate()===20;if(!show){b.remove();document.body.style.paddingTop="0"}const x=b.querySelector(".dussehra-close");if(x)x.onclick=()=>{b.remove();document.body.style.paddingTop="0"};})();</script></body></html>
+</script><script>(function(){const b=document.getElementById("dussehraBanner");if(!b)return;const d=new Date();const show=d.getFullYear()===2026&&d.getMonth()===9&&d.getDate()===20;if(!show){b.remove();document.body.style.paddingTop="0"}const x=b.querySelector(".dussehra-close");if(x)x.onclick=()=>{b.remove();document.body.style.paddingTop="0"};})();</script><script>
+(function(){
+const b=document.getElementById('themeToggle'),p=document.getElementById('printProfile');
+if(localStorage.getItem('ms_v16_theme')==='light')document.body.classList.add('v16-light');
+if(b)b.onclick=()=>{document.body.classList.toggle('v16-light');localStorage.setItem('ms_v16_theme',document.body.classList.contains('v16-light')?'light':'dark')};
+if(p)p.onclick=()=>window.print();
+const nav=document.querySelector('nav');
+if(nav){const c=document.createElement('div');c.className='v16-clock';nav.appendChild(c);const tick=()=>c.textContent='IST • '+new Intl.DateTimeFormat('en-IN',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:true,timeZone:'Asia/Kolkata'}).format(new Date());tick();setInterval(tick,1000);}
+})();
+</script></body></html>
