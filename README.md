@@ -1,20 +1,35 @@
-# Manoranjan Singh — Executive Smart Edition V26
+# Manoranjan Singh — Complete Executive Website
 
-Premium static executive portfolio for Power Transmission, TBCB, EPC & Infrastructure leadership.
+Premium static executive portfolio for **Power Transmission, TBCB, EPC & Infrastructure** leadership.
 
-## V26 additions
-- Installable PWA with offline caching via `sw.js`
-- Native Share Profile button with clipboard fallback
-- Print Profile action with dedicated print styling
-- Save Contact / vCard (`Manoranjan_Singh.vcf`)
-- QR Code modal for `https://manoranjansingh.in/`
-- Copy Website action
-- Active navigation indicator and scroll progress
-- Mobile-responsive recruiter utilities
-- Existing award gallery, POWERGRID/DFCC recognitions, project filters, lightbox, theme switch and direct-call links preserved
+## Final package includes
+- Premium dark/light executive design
+- Manoranjan Singh circular corporate logo
+- Static professional profile photo
+- Cinematic Power Transmission background flash using transmission-line images only
+- Smooth cross-fade, slow zoom and energy-beam effects
+- Project portfolio with technical filters and project detail modal
+- Career timeline and recruiter quick-view section
+- POWERGRID 2014 award gallery — Participation Honor and Special Honor
+- DFCC Performance Appreciation — September 2017
+- JSL Spotlight / Certificate / Value Champion / WOD-2024 recognitions
+- Click-to-enlarge award images
+- Direct-call buttons for both phone numbers
+- Professional email, LinkedIn and WhatsApp links
+- Executive resume PDF
+- Save Contact vCard
+- QR code
+- Native share / copy website utilities
+- Print Profile
+- Installable PWA + offline caching
+- Mobile responsive navigation
+- Smooth scrolling, active navigation and reduced-motion support
+- GitHub Pages custom-domain file (`CNAME`)
+- `404.html`, `robots.txt` and `sitemap.xml`
 
-## Deploy
-Upload all files to the website root. Keep `index.html` at the root and preserve the filenames referenced by it.
+## Deployment
+Upload the complete contents of this folder to the website root. Keep `index.html` at the root and preserve all referenced filenames.
 
+Primary domain: https://manoranjansingh.in/
 
-V27 update: Added the supplied Manoranjan Singh Power Transmission circular logo to the website header, favicon, Apple touch icon, and PWA manifest.
+The cinematic background animation is implemented with CSS keyframes and transforms for broad browser support.
