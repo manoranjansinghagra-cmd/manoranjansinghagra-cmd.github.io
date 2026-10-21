@@ -23,3 +23,7 @@ Upload all files to the root of the repository. `index.html` must remain at the 
 
 ## Custom domain
 The included `CNAME` targets `manoranjansingh.in`.
+
+
+### V23 update
+- Added DFCC Project Performance Appreciation recognition (September 2017) with the supplied photograph.
