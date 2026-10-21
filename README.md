@@ -15,3 +15,6 @@ Premium static executive portfolio for Power Transmission, TBCB, EPC & Infrastru
 
 ## Deploy
 Upload all files to the website root. Keep `index.html` at the root and preserve the filenames referenced by it.
+
+
+V27 update: Added the supplied Manoranjan Singh Power Transmission circular logo to the website header, favicon, Apple touch icon, and PWA manifest.
