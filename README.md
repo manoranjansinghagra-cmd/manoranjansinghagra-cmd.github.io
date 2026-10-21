@@ -33,3 +33,7 @@ Upload the complete contents of this folder to the website root. Keep `index.htm
 Primary domain: https://manoranjansingh.in/
 
 The cinematic background animation is implemented with CSS keyframes and transforms for broad browser support.
+
+
+## Cinematic Transmission Background
+The hero background now includes the two newly supplied transmission-line photographs (`bg-user-transmission-01.jpg` and `bg-user-transmission-02.jpg`) plus the existing transmission images. They cross-fade with a slow zoom and premium energy sweep. The profile portrait and award/gallery images remain separate and are not used in the background flash.
