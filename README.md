@@ -36,4 +36,4 @@ The cinematic background animation is implemented with CSS keyframes and transfo
 
 
 ## Cinematic Transmission Background
-The hero background now includes the two newly supplied transmission-line photographs (`bg-user-transmission-01.jpg` and ``) plus the existing transmission images. They cross-fade with a slow zoom and premium energy sweep. The profile portrait and award/gallery images remain separate and are not used in the background flash.
+The hero background now includes the two newly supplied transmission-line photographs (`bg-user-transmission-01.jpg` and `bg-user-transmission-02.jpg`) plus the existing transmission images. They cross-fade with a slow zoom and premium energy sweep. The profile portrait and award/gallery images remain separate and are not used in the background flash.
