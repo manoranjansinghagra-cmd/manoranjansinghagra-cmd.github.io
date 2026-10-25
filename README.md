@@ -1,5 +1,8 @@
-# Manoranjan Singh — V38 Executive Signature Transmission Edition
+# Manoranjan Singh — V33 Executive Signature Edition
 
-V38 preserves the premium Executive Signature website and adds the latest clear transmission-line flash background set. The flash slideshow uses 7 transmission images, including the newly supplied transmission photos, with profile and award imagery kept static.
+V33 adds a premium Executive Signature section while preserving the V32 site, assets, transmission flash, awards, resume, logo, recruiter view, command center and responsive behaviour.
 
-Contact email: msingh@manoranjansingh.in
+Signature flow: Lead → Execute → Control → Resolve → Deliver.
+
+
+V36 UPDATE — Single selected flash background: bg-executive-flash.png. The other uploaded transmission images are not used for the hero flash. Profile, awards and other website content remain unchanged.
