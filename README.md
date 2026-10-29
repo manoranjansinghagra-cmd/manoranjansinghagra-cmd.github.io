@@ -1,14 +1,16 @@
 # Manoranjan Singh — V42 Black Label Executive Portfolio
 
-Premium executive portfolio for Power Transmission, TBCB, EPC and infrastructure leadership.
+Updated: Premium Power Transmission Line cinematic background flash.
 
-## V42 highlights
-- Black Label navy / champagne-gold executive visual system
-- Executive Portfolio Intelligence navigation
-- Five leadership lenses: Scale, Technical, Projects, Recognition, Leadership
-- Career milestone timeline
-- Existing recruiter view, awards wall, project filters, resume, QR, contact actions and responsive design retained
-- Current contact email: msingh@manoranjansingh.in
-- Website: manoranjansingh.in
+Background sequence:
+- bg-transmission-01.jpg — signature wide transmission-line image (opening frame)
+- bg-transmission-02.jpg — close technical tower/conductor composition
 
-Target positioning: Deputy General Manager (DGM) and Above.
+Effects:
+- 32-second cinematic loop
+- Smooth cross-fade
+- Subtle Ken-Burns zoom
+- Existing premium champagne/gold energy sweep retained
+- Mobile focal positioning optimized
+
+All original portfolio assets and functionality retained.
