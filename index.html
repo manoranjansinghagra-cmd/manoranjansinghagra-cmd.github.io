@@ -102,14 +102,49 @@ section{position:relative}.head h2{font-family:Georgia,'Times New Roman',serif;f
 footer{background:#02070b!important;border-top:1px solid rgba(228,189,104,.12)!important}
 @media(max-width:760px){.nav{height:70px}.navin{height:70px}.hero{min-height:760px;padding-top:130px}.hero h1{font-size:clamp(48px,16vw,74px);letter-spacing:-2.5px}.identity{border-radius:24px}.kpis{margin-top:-30px}.kpi-grid{grid-template-columns:repeat(2,1fr)}.kpi{border-bottom:1px solid var(--line)}.kpi:nth-child(2){border-right:0}.kpi:last-child{grid-column:1/-1;border-right:0}.links{gap:12px}}
 </style>
-<style id="v41-seal-style">.v41-seal{display:inline-flex;align-items:center;gap:10px;margin-bottom:10px;color:#dce5ea}.v41-seal span{width:28px;height:28px;border:1px solid rgba(228,189,104,.55);border-radius:50%;display:grid;place-items:center;color:#f6d98b;font:700 9px Georgia,serif;box-shadow:0 0 20px rgba(228,189,104,.10)}.v41-seal small{font-size:8px;letter-spacing:2px;color:#9caab4}@media(max-width:600px){.v41-seal small{font-size:7px;letter-spacing:1.4px}}</style><style>@media(max-width:700px){.bg-frame.frame-1{background-position:60% center}.bg-frame.frame-2{background-position:68% center}}</style></head>
+<style id="v41-seal-style">.v41-seal{display:inline-flex;align-items:center;gap:10px;margin-bottom:10px;color:#dce5ea}.v41-seal span{width:28px;height:28px;border:1px solid rgba(228,189,104,.55);border-radius:50%;display:grid;place-items:center;color:#f6d98b;font:700 9px Georgia,serif;box-shadow:0 0 20px rgba(228,189,104,.10)}.v41-seal small{font-size:8px;letter-spacing:2px;color:#9caab4}@media(max-width:600px){.v41-seal small{font-size:7px;letter-spacing:1.4px}}</style><style>@media(max-width:700px){.bg-frame.frame-1{background-position:60% center}.bg-frame.frame-2{background-position:68% center}}</style>
+<style id="v43-cinematic-interaction">
+/* V43 Black Label Cinematic Interaction Layer */
+.bg-frame.frame-1{background-image:url('./bg-transmission-01.jpg');animation-delay:0s}
+.bg-frame.frame-2{background-image:url('./bg-transmission-02.jpg');animation-delay:15s}
+.bg-frame.frame-3{background-image:url('./bg-transmission-03.jpg');animation-delay:30s}
+.bg-frame{animation-name:v43TransmissionFrame;animation-duration:45s}
+@keyframes v43TransmissionFrame{0%,5%{opacity:0;transform:scale(1.018);filter:saturate(.92) contrast(1.02)}10%,28%{opacity:1;transform:scale(1.045);filter:saturate(1.04) contrast(1.04)}34%,38%{opacity:0;transform:scale(1.06);filter:saturate(1.08) contrast(1.06)}100%{opacity:0;transform:scale(1.018)}}
+.tower-beam{position:absolute;inset:-20%;z-index:2;pointer-events:none;opacity:.38;background:linear-gradient(116deg,transparent 42%,rgba(255,255,255,0) 47%,rgba(255,246,210,.55) 49.5%,rgba(240,204,114,.32) 51%,rgba(255,255,255,0) 54%,transparent 59%);mix-blend-mode:screen;filter:blur(2px);animation:v43Beam 11s ease-in-out infinite}
+.tower-beam:after{content:"";position:absolute;left:5%;right:5%;top:43%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),rgba(240,204,114,.62),rgba(255,255,255,.12),transparent);box-shadow:0 0 18px rgba(240,204,114,.34);transform:rotate(-7deg);animation:v43Line 7s ease-in-out infinite}
+@keyframes v43Beam{0%,100%{transform:translateX(-18%) translateY(3%) rotate(-2deg);opacity:.05}45%{transform:translateX(16%) translateY(-2%) rotate(1deg);opacity:.48}65%{transform:translateX(4%) translateY(1%) rotate(0);opacity:.16}}
+@keyframes v43Line{0%,100%{opacity:.08;transform:translateX(-10%) rotate(-7deg)}45%{opacity:.72;transform:translateX(8%) rotate(-7deg)}65%{opacity:.16}}
+.hero-vignette{position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(circle at var(--mx,50%) var(--my,45%),rgba(240,204,114,.11),transparent 15%),radial-gradient(circle at 75% 38%,transparent 0,transparent 30%,rgba(0,0,0,.18) 78%,rgba(0,0,0,.36) 100%)}
+.v43-cursor,.v43-cursor-ring{position:fixed;left:0;top:0;pointer-events:none;z-index:10000;transform:translate(-50%,-50%);opacity:0;transition:opacity .25s ease}
+.v43-cursor{width:7px;height:7px;border-radius:50%;background:#f5d98e;box-shadow:0 0 12px #f0cc72,0 0 28px rgba(240,204,114,.65)}
+.v43-cursor-ring{width:34px;height:34px;border:1px solid rgba(240,204,114,.58);border-radius:50%;transition:width .25s,height .25s,border-color .25s,opacity .25s;box-shadow:0 0 22px rgba(240,204,114,.12)}
+body.v43-pointer .v43-cursor,body.v43-pointer .v43-cursor-ring{opacity:1}
+body.v43-hover .v43-cursor-ring{width:54px;height:54px;border-color:rgba(255,235,175,.85);box-shadow:0 0 32px rgba(240,204,114,.2)}
+.v43-spotlight{position:fixed;inset:0;pointer-events:none;z-index:9990;background:radial-gradient(circle 180px at var(--cx,50%) var(--cy,50%),rgba(240,204,114,.075),transparent 70%);mix-blend-mode:screen;opacity:0;transition:opacity .3s ease}
+body.v43-pointer .v43-spotlight{opacity:1}
+.v43-particles{position:fixed;inset:0;z-index:9985;pointer-events:none;overflow:hidden;opacity:.48}
+.v43-particle{position:absolute;width:2px;height:2px;border-radius:50%;background:#f0cc72;box-shadow:0 0 8px rgba(240,204,114,.7);animation:v43Float linear infinite}
+@keyframes v43Float{0%{transform:translate3d(0,25px,0);opacity:0}15%{opacity:.65}80%{opacity:.25}100%{transform:translate3d(var(--dx),-120px,0);opacity:0}}
+.v43-progress{position:fixed;left:0;top:0;height:2px;width:0;background:linear-gradient(90deg,#d6ad55,#fff0b4,#d6ad55);box-shadow:0 0 12px rgba(240,204,114,.55);z-index:10001;pointer-events:none}
+.v43-status{position:fixed;right:18px;bottom:18px;z-index:9900;display:flex;align-items:center;gap:8px;padding:8px 11px;border:1px solid rgba(240,204,114,.22);border-radius:999px;background:rgba(4,14,24,.72);backdrop-filter:blur(12px);color:#cbd7df;font-size:9px;letter-spacing:1px;text-transform:uppercase;box-shadow:0 12px 35px rgba(0,0,0,.24)}
+.v43-status i{width:6px;height:6px;border-radius:50%;background:#f0cc72;box-shadow:0 0 10px #f0cc72;animation:v43Pulse 1.8s infinite}.v43-status b{font-weight:800;color:#e7edf1}
+@keyframes v43Pulse{50%{opacity:.35;transform:scale(.72)}}
+.v43-parallax{transform:translate3d(var(--px,0),var(--py,0),0);transition:transform .12s ease-out;will-change:transform}
+.kpi,.card,.tool-card,.brief-grid article,.v42-lens,.stat{position:relative;overflow:hidden}
+.kpi:before,.card:before,.tool-card:before,.brief-grid article:before,.v42-lens:before,.stat:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),rgba(240,204,114,.12),transparent 24%);opacity:0;transition:opacity .25s;pointer-events:none}
+.kpi.v43-lit:before,.card.v43-lit:before,.tool-card.v43-lit:before,.brief-grid article.v43-lit:before,.v42-lens.v43-lit:before,.stat.v43-lit:before{opacity:1}
+@media(max-width:800px),(pointer:coarse){.v43-cursor,.v43-cursor-ring,.v43-spotlight,.v43-particles{display:none}.v43-status{bottom:74px;right:12px}.v43-parallax{transform:none!important}.hero-vignette{background:radial-gradient(circle at 50% 42%,rgba(240,204,114,.05),transparent 24%),linear-gradient(180deg,transparent,rgba(0,0,0,.18))}}
+@media(prefers-reduced-motion:reduce){.bg-frame,.tower-beam,.tower-beam:after,.v43-particle,.v43-status i{animation:none!important}.v43-parallax{transform:none!important}.v43-cursor,.v43-cursor-ring,.v43-spotlight,.v43-particles{display:none}}
+</style>
+
+</head>
 <body><a class="skip-link" href="#home">Skip to main content</a>
 <div class="dussehra" id="dussehra"><div class="dussehra-glow"></div><span>🏹</span><strong>Happy Dussehra</strong><small>Victory of good over evil • Peace, prosperity & success</small><span>🪔</span><button id="closeDussehra" aria-label="Close">×</button></div>
 <header class="nav"><div class="container navin"><a class="logo" href="#home" aria-label="Manoranjan Singh home"><img class="logo-mark" loading="lazy" decoding="async" src="./manoranjan-singh-logo.png" alt="Manoranjan Singh Power Transmission logo"><span>Manoranjan Singh<small>DGM & Above · Power Transmission · TBCB · EPC</small></span></a><button class="menu" id="menu">☰</button><nav class="links" id="links"><a href="#home">Home</a><a href="#about">Profile</a><a href="#projects">Projects</a><a href="#awards">Awards</a><a href="#executive-command">Executive</a><a href="#career">Career</a><a href="#recruiter">Recruiter</a><a href="#contact">Contact</a><a href="#executive-value">Executive Value</a></nav><div class="nav-actions"><button class="icon recruiter-toggle" id="recruiterToggle" type="button" title="Open recruiter view">Recruiter View</button><button class="icon" id="theme" type="button">☼ / ☾</button><button class="icon" id="motionToggle" type="button" title="Pause background motion">Pause Motion</button></div></div></header>
 
 <main>
 <div class="executive-strip" role="status" aria-label="Executive profile summary"><div class="container executive-strip-inner"><span><b>28+ Years</b> Leadership</span><span><b>25+ Lines</b> Energized</span><span><b>Rs. 2,200 Cr+</b> Project Portfolio</span><span><b>765 kV / ±800 kV HVDC</b> Exposure</span><span class="strip-open"><i></i> Open to DGM & Above</span></div></div>
-<section class="hero" id="home"><div class="bg"><div class="bg-frame frame-1"></div><div class="bg-frame frame-2"></div></div><div class="flash"></div><div class="container hero-grid"><div class="reveal"><div class="v41-seal"><span>MS</span><small>EXECUTIVE SIGNATURE · 2026</small></div><div class="eyebrow">DEPUTY GENERAL MANAGER (DGM) & ABOVE</div><h1>Manoranjan <span>Singh</span></h1><h2>Power Transmission & EPC Project Leader</h2><p class="hero-copy">28+ years of progressive experience across transmission lines, substations, TBCB projects and high-voltage infrastructure, with exposure from 132 kV through 765 kV AC and ±800 kV HVDC.</p><div class="actions"><a class="btn primary" href="#projects">Explore Projects →</a><a class="btn" href="./Manoranjan_Singh_Resume.pdf" target="_blank">Executive Resume</a><a class="btn" href="mailto:msingh@manoranjansingh.in">Email Me</a></div><div class="hero-status"><span class="live-dot"></span><b>OPEN TO DGM & ABOVE</b><span>Power Transmission · TBCB · EPC · Infrastructure</span></div></div><div class="identity reveal"><div class="monogram" id="profileVisual"><img src="./manoranjan-profile.jpg" loading="eager" decoding="async" fetchpriority="high" alt="Manoranjan Singh" onerror="this.remove();this.parentElement.classList.add('fallback')"><strong>MS</strong></div><div class="identity-meta"><b>AGM / Chief Project Manager</b><span>Montecarlo Limited · Maharashtra TBCB Transmission Project</span></div><div class="quote">“Delivering reliable infrastructure through disciplined execution, strong teams and accountable project leadership.”</div></div></div></section>
+<section class="hero" id="home"><div class="bg"><div class="bg-frame frame-1"></div><div class="bg-frame frame-2"></div><div class="bg-frame frame-3"></div><div class="tower-beam"></div><div class="hero-vignette"></div></div><div class="flash"></div><div class="container hero-grid"><div class="reveal"><div class="v41-seal"><span>MS</span><small>EXECUTIVE SIGNATURE · 2026</small></div><div class="eyebrow">DEPUTY GENERAL MANAGER (DGM) & ABOVE</div><h1>Manoranjan <span>Singh</span></h1><h2>Power Transmission & EPC Project Leader</h2><p class="hero-copy">28+ years of progressive experience across transmission lines, substations, TBCB projects and high-voltage infrastructure, with exposure from 132 kV through 765 kV AC and ±800 kV HVDC.</p><div class="actions"><a class="btn primary" href="#projects">Explore Projects →</a><a class="btn" href="./Manoranjan_Singh_Resume.pdf" target="_blank">Executive Resume</a><a class="btn" href="mailto:msingh@manoranjansingh.in">Email Me</a></div><div class="hero-status"><span class="live-dot"></span><b>OPEN TO DGM & ABOVE</b><span>Power Transmission · TBCB · EPC · Infrastructure</span></div></div><div class="identity reveal"><div class="monogram" id="profileVisual"><img src="./manoranjan-profile.jpg" loading="eager" decoding="async" fetchpriority="high" alt="Manoranjan Singh" onerror="this.remove();this.parentElement.classList.add('fallback')"><strong>MS</strong></div><div class="identity-meta"><b>AGM / Chief Project Manager</b><span>Montecarlo Limited · Maharashtra TBCB Transmission Project</span></div><div class="quote">“Delivering reliable infrastructure through disciplined execution, strong teams and accountable project leadership.”</div></div></div></section>
 
 <div class="kpis"><div class="container"><div class="kpi-grid reveal"><div class="kpi"><b>28+</b><span>Years Experience</span></div><div class="kpi"><b>25+</b><span>Lines Energized</span></div><div class="kpi"><b>Rs. 2,200 Cr+</b><span>Portfolio Exposure</span></div><div class="kpi"><b>765 kV</b><span>Highest AC</span></div><div class="kpi"><b>±800 kV</b><span>HVDC Exposure</span></div></div></div></div>
 
@@ -416,6 +451,34 @@ const copyEmail=$('#copyEmail'); if(copyEmail){copyEmail.onclick=async()=>{try{a
   const footer=document.querySelector('footer'); if(footer&&!document.getElementById('readingTime')){const el=document.createElement('span');el.id='readingTime';el.style.cssText='margin-left:12px;color:var(--muted);font-size:10px';const words=document.body.innerText.trim().split(/\s+/).length;el.textContent='• '+Math.max(2,Math.ceil(words/220))+' min portfolio read';footer.appendChild(el)}
 })();
 </script>
+
+<div class="v43-progress" id="v43Progress" aria-hidden="true"></div>
+<div class="v43-cursor" id="v43Cursor" aria-hidden="true"></div><div class="v43-cursor-ring" id="v43CursorRing" aria-hidden="true"></div><div class="v43-spotlight" aria-hidden="true"></div>
+<div class="v43-particles" id="v43Particles" aria-hidden="true"></div>
+<div class="v43-status"><i></i><b>Executive Portfolio</b><span>•</span><span>Power Transmission</span></div>
+<script id="v43-cinematic-interaction-js">
+(function(){
+ const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const coarse=window.matchMedia('(pointer: coarse)').matches;
+ const hero=document.querySelector('.hero'), root=document.documentElement;
+ if(!reduce&&!coarse){
+   document.body.classList.add('v43-pointer');
+   const cur=document.getElementById('v43Cursor'), ring=document.getElementById('v43CursorRing');
+   let tx=0,ty=0,rx=0,ry=0,raf=0;
+   window.addEventListener('mousemove',e=>{tx=e.clientX;ty=e.clientY;root.style.setProperty('--cx',e.clientX+'px');root.style.setProperty('--cy',e.clientY+'px');root.style.setProperty('--mx',(e.clientX/window.innerWidth*100)+'%');root.style.setProperty('--my',(e.clientY/window.innerHeight*100)+'%');
+     document.querySelectorAll('.kpi,.card,.tool-card,.brief-grid article,.v42-lens,.stat').forEach(el=>{const r=el.getBoundingClientRect();if(e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom){el.classList.add('v43-lit');el.style.setProperty('--gx',((e.clientX-r.left)/r.width*100)+'%');el.style.setProperty('--gy',((e.clientY-r.top)/r.height*100)+'%')}else el.classList.remove('v43-lit')});
+     if(hero&&e.clientY<hero.getBoundingClientRect().bottom){const x=(e.clientX/window.innerWidth-.5),y=(e.clientY/window.innerHeight-.5);hero.style.setProperty('--px',(x*-5).toFixed(2)+'px');hero.style.setProperty('--py',(y*-3).toFixed(2)+'px');document.querySelector('.identity')?.classList.add('v43-parallax');document.querySelector('.identity')?.style.setProperty('--px',(x*6).toFixed(2)+'px');document.querySelector('.identity')?.style.setProperty('--py',(y*4).toFixed(2)+'px');}
+   });
+   const loop=()=>{rx+=(tx-rx)*.22;ry+=(ty-ry)*.22;cur.style.transform=`translate(${rx}px,${ry}px) translate(-50%,-50%)`;ring.style.transform=`translate(${rx}px,${ry}px) translate(-50%,-50%)`;raf=requestAnimationFrame(loop)};loop();
+   document.querySelectorAll('a,button,.btn,.filter,.tool-card,.kpi,.card').forEach(el=>{el.addEventListener('mouseenter',()=>document.body.classList.add('v43-hover'));el.addEventListener('mouseleave',()=>document.body.classList.remove('v43-hover'))});
+   const p=document.getElementById('v43Particles');for(let i=0;i<18;i++){const s=document.createElement('span');s.className='v43-particle';s.style.left=(Math.random()*100)+'%';s.style.top=(55+Math.random()*45)+'%';s.style.setProperty('--dx',((Math.random()-.5)*90)+'px');s.style.animationDuration=(6+Math.random()*7)+'s';s.style.animationDelay=(-Math.random()*10)+'s';p.appendChild(s)}
+ }
+ const progress=document.getElementById('v43Progress');
+ function scrollProgress(){const d=document.documentElement, max=d.scrollHeight-innerHeight;progress.style.width=(max>0?(scrollY/max*100):0)+'%'}
+ addEventListener('scroll',scrollProgress,{passive:true});scrollProgress();
+})();
+</script>
+
 </body></html>
 <style>
 @media print{
