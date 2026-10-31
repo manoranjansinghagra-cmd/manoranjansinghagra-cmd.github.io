@@ -458,7 +458,7 @@ const copyEmail=$('#copyEmail'); if(copyEmail){copyEmail.onclick=async()=>{try{a
 </script>
 
 <div class="v43-progress" id="v43Progress" aria-hidden="true"></div>
-<div class="v43-cursor" id="v43Cursor" aria-hidden="true"></div><div class="v43-cursor-ring" id="v43CursorRing" aria-hidden="true"></div><div class="v44-cursor-trail" id="v44CursorTrail" aria-hidden="true"></div><div class="v44-cursor-label" id="v44CursorLabel" aria-hidden="true">EXECUTIVE PORTFOLIO</div><div class="v43-spotlight" aria-hidden="true"></div>
+<div class="v43-cursor" id="v43Cursor" aria-hidden="true"></div><div class="v43-cursor-ring" id="v43CursorRing" aria-hidden="true"></div><div class="v44-cursor-trail" id="v44CursorTrail" aria-hidden="true"></div><div class="v43-spotlight" aria-hidden="true"></div>
 <div class="v43-particles" id="v43Particles" aria-hidden="true"></div>
 <div class="v43-status"><i></i><b>Executive Portfolio</b><span>•</span><span>Power Transmission</span></div>
 <script id="v43-cinematic-interaction-js">
@@ -468,14 +468,14 @@ const copyEmail=$('#copyEmail'); if(copyEmail){copyEmail.onclick=async()=>{try{a
  const hero=document.querySelector('.hero'), root=document.documentElement;
  if(!reduce&&!coarse){
    document.body.classList.add('v43-pointer');
-   const cur=document.getElementById('v43Cursor'), ring=document.getElementById('v43CursorRing'), trail=document.getElementById('v44CursorTrail'), label=document.getElementById('v44CursorLabel');
+   const cur=document.getElementById('v43Cursor'), ring=document.getElementById('v43CursorRing'), trail=document.getElementById('v44CursorTrail');
    let tx=0,ty=0,rx=0,ry=0,lx=0,ly=0,raf=0;
    window.addEventListener('mousemove',e=>{tx=e.clientX;ty=e.clientY;trail.style.left=e.clientX+'px';trail.style.top=e.clientY+'px';label.style.left=e.clientX+'px';label.style.top=e.clientY+'px';root.style.setProperty('--cx',e.clientX+'px');root.style.setProperty('--cy',e.clientY+'px');root.style.setProperty('--mx',(e.clientX/window.innerWidth*100)+'%');root.style.setProperty('--my',(e.clientY/window.innerHeight*100)+'%');
      document.querySelectorAll('.kpi,.card,.tool-card,.brief-grid article,.v42-lens,.stat').forEach(el=>{const r=el.getBoundingClientRect();if(e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom){el.classList.add('v43-lit');el.style.setProperty('--gx',((e.clientX-r.left)/r.width*100)+'%');el.style.setProperty('--gy',((e.clientY-r.top)/r.height*100)+'%')}else el.classList.remove('v43-lit')});
      if(hero&&e.clientY<hero.getBoundingClientRect().bottom){const x=(e.clientX/window.innerWidth-.5),y=(e.clientY/window.innerHeight-.5);hero.style.setProperty('--px',(x*-5).toFixed(2)+'px');hero.style.setProperty('--py',(y*-3).toFixed(2)+'px');document.querySelector('.identity')?.classList.add('v43-parallax');document.querySelector('.identity')?.style.setProperty('--px',(x*6).toFixed(2)+'px');document.querySelector('.identity')?.style.setProperty('--py',(y*4).toFixed(2)+'px');}
    });
    const loop=()=>{rx+=(tx-rx)*.28;ry+=(ty-ry)*.28;lx+=(tx-lx)*.10;ly+=(ty-ly)*.10;cur.style.transform=`translate(${rx}px,${ry}px) translate(-50%,-50%)`;ring.style.transform=`translate(${rx}px,${ry}px) translate(-50%,-50%)`;trail.style.transform=`translate(${lx}px,${ly}px) translate(-50%,-50%)`;raf=requestAnimationFrame(loop)};loop();
-   document.querySelectorAll('a,button,.btn,.filter,.tool-card,.kpi,.card').forEach(el=>{el.addEventListener('mouseenter',()=>{document.body.classList.add('v43-hover');label.textContent=(el.dataset.cursor||((el.tagName==='A'||el.tagName==='BUTTON')?'OPEN / EXPLORE':'VIEW DETAILS')).toUpperCase()});el.addEventListener('mouseleave',()=>{document.body.classList.remove('v43-hover');label.textContent='EXECUTIVE PORTFOLIO'})});
+   document.querySelectorAll('a,button,.btn,.filter,.tool-card,.kpi,.card').forEach(el=>{el.addEventListener('mouseenter',()=>document.body.classList.add('v43-hover'));el.addEventListener('mouseleave',()=>document.body.classList.remove('v43-hover'))});
    const p=document.getElementById('v43Particles');for(let i=0;i<18;i++){const s=document.createElement('span');s.className='v43-particle';s.style.left=(Math.random()*100)+'%';s.style.top=(55+Math.random()*45)+'%';s.style.setProperty('--dx',((Math.random()-.5)*90)+'px');s.style.animationDuration=(6+Math.random()*7)+'s';s.style.animationDelay=(-Math.random()*10)+'s';p.appendChild(s)}
  }
  const progress=document.getElementById('v43Progress');
