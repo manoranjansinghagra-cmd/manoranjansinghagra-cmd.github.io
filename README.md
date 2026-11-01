@@ -1,3 +1,2 @@
-V43 Black Label Cinematic Executive Portfolio
-
-Premium Power Transmission background flash, champagne-gold cursor highlight, mouse spotlight, interactive card illumination, subtle particles, hero parallax, energy beam, scroll progress and executive status badge.
+Manoranjan Singh — V41 Black Label Executive Signature Website
+Premium executive visual refresh based on V40. Selected single transmission image retained only as the hero flash background. Profile and recognition images remain static.
