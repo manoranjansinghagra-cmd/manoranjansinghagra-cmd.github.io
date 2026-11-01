@@ -1,52 +1,41 @@
-# V45 — Online Site Activity Dashboard Setup
+# V49 — Admin Protected Online Site Activity Dashboard
 
-This version supports two modes:
-- **Local mode:** works immediately in the browser.
-- **Online mode:** syncs updates to a Google Sheet through Google Apps Script, so the dashboard can be viewed from any device.
+## What is protected
+- The public website can **view** the latest Site Activity dashboard.
+- Only a person who knows the private **Admin Access Key** can open the update panel and save data to the online Google Sheet.
+- The key is checked server-side by Google Apps Script. It is **not hard-coded into the public website**.
+- The browser keeps the key only in `sessionStorage` for the current tab/session.
 
-## 1. Create the online database
-1. Create a new Google Sheet, e.g. `Manoranjan Site Activity Dashboard`.
+## 1. Create the Google Sheet
+1. Create a Google Sheet, e.g. `Manoranjan Site Activity Dashboard`.
 2. Open **Extensions → Apps Script**.
-3. Delete the default code and paste the contents of `Code.gs`.
-4. Change `ADMIN_TOKEN = 'CHANGE_THIS_TOKEN'` to a private token of your choice.
-5. Click **Deploy → New deployment**.
-6. Select **Web app**.
-7. Execute as: **Me**.
-8. Who has access: **Anyone** (or the most suitable access allowed by your Google account).
-9. Deploy and copy the Web App URL.
+3. Replace the default code with the supplied `Code.gs`.
+4. In `Code.gs`, change `ADMIN_TOKEN` to a private key of your choice. Example: `MS@YourPrivateKey2026`.
+5. Do **not** upload `Code.gs` to your public GitHub Pages root. Keep it private in Apps Script.
 
-## 2. Connect the website
+## 2. Deploy Apps Script
+1. Click **Deploy → New deployment**.
+2. Select **Web app**.
+3. Execute as: **Me**.
+4. Who has access: **Anyone** (the sheet itself remains private).
+5. Deploy and copy the Web App URL.
+
+## 3. Connect V49
 Open `index.html` and find:
 
 `const API_URL='';`
 
-Paste your Web App URL between the quotes.
+Paste your Apps Script Web App URL between the quotes. Save and upload the updated `index.html` and website assets to GitHub Pages.
 
-Then set:
+Do not put your Admin Access Key in `index.html`.
 
-`const API_TOKEN='';`
+## 4. How you will update
+1. Open `https://manoranjansingh.in/`.
+2. Go to **Site Activity**.
+3. Tap **Admin Update**.
+4. Enter your private Admin Access Key.
+5. Update progress and tap **Save Site Update**.
+6. The data is saved to the private Google Sheet and becomes the latest public dashboard value.
 
-to the same token used in `Code.gs`.
-
-Save `index.html` and upload it to your GitHub Pages root.
-
-## 3. How to update from mobile
-Open `manoranjansingh.in` → **Site Activity** → **Update Site Activity**.
-Enter:
-- Project / Site
-- Reporting Date
-- RAG status
-- Planned %
-- Actual %
-- Manpower
-- Equipment / T&P
-- Today's Focus
-- Key Issue / Remark
-- Activity-wise Planned / Actual %
-
-Tap **Save Site Update**.
-
-The update is saved to the Google Sheet and becomes the latest dashboard data.
-
-## 4. Important security note
-Do not publish the Google Sheet itself publicly. The website only needs the Apps Script Web App endpoint. Keep the admin token private. For stronger security, restrict the Web App access and use a proper authenticated backend.
+## 5. Important security note
+This setup protects the **update/write operation**. The latest progress is intentionally public because the dashboard is public. If you want the entire dashboard itself to be private, use Google sign-in or a dedicated authenticated backend instead.
