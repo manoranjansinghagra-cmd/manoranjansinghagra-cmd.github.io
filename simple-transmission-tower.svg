@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#10253a"/><stop offset="0.58" stop-color="#0a1827"/><stop offset="1" stop-color="#06111d"/></linearGradient>
+  <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d8b66a" stop-opacity=".48"/><stop offset=".5" stop-color="#f0cc72" stop-opacity=".18"/><stop offset="1" stop-color="#9d7a32" stop-opacity=".05"/></linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<g fill="none" stroke="url(#steel)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".75">
+  <path d="M800 150 L650 900 M800 150 L950 900 M800 150 L800 900"/>
+  <path d="M730 290 L870 290 M690 390 L910 390 M650 500 L950 500 M600 620 L1000 620 M550 760 L1050 760"/>
+  <path d="M730 290 L800 390 L870 290 M690 390 L800 500 L910 390 M650 500 L800 620 L950 500 M600 620 L800 760 L1000 620"/>
+  <path d="M730 290 L520 250 M870 290 L1080 250 M690 390 L430 330 M910 390 L1170 330" opacity=".7"/>
+  <path d="M520 250 C400 235 310 235 190 250 M1080 250 C1200 235 1290 235 1410 250" opacity=".55"/>
+  <path d="M430 330 C300 315 210 315 90 330 M1170 330 C1300 315 1390 315 1510 330" opacity=".45"/>
+</g>
+<g fill="none" stroke="#d6ad55" stroke-width="2" opacity=".22"><path d="M0 840 H1600"/><path d="M0 870 H1600"/></g>
+</svg>
