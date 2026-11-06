@@ -155,6 +155,20 @@ footer{background:#02070b!important;border-top:1px solid rgba(228,189,104,.12)!i
 @media(prefers-reduced-motion:reduce){.festival-sparkle{animation:none;display:none}}
 </style>
 
+
+<style id="enhanced-transmission-background-motion">
+/* Enhanced cinematic transmission-line background: visible zoom + gentle light sweep */
+.hero .bg-frame{inset:-7%;opacity:.72;transform:scale(1.025);animation:msBackgroundZoom 18s ease-in-out infinite!important;will-change:transform,opacity,filter;background-position:center center}
+.hero .flash{display:block!important;position:absolute;inset:-35%;z-index:-1;pointer-events:none;opacity:0;background:linear-gradient(112deg,transparent 39%,rgba(255,255,255,0) 45%,rgba(255,255,255,.52) 49%,rgba(255,226,160,.34) 51%,rgba(255,255,255,0) 56%,transparent 62%);mix-blend-mode:screen;filter:blur(1.2px);animation:msLightSweep 9s ease-in-out infinite!important}
+.hero .flash:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 48%,rgba(255,255,255,.22),rgba(244,203,108,.10) 20%,transparent 48%);animation:msLightPulse 9s ease-in-out infinite}
+.hero .flash:after{content:"";position:absolute;left:-10%;right:-10%;top:50%;height:2px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.65),rgba(244,203,108,.7),transparent);box-shadow:0 0 18px rgba(255,224,133,.55);transform:rotate(-12deg);animation:msEnergyLine 9s ease-in-out infinite}
+@keyframes msBackgroundZoom{0%,100%{opacity:.72;transform:scale(1.025);filter:saturate(1.03) brightness(.92)}25%{opacity:.96;transform:scale(1.075);filter:saturate(1.10) brightness(1.04)}50%{opacity:1;transform:scale(1.12);filter:saturate(1.14) brightness(1.10)}75%{opacity:.91;transform:scale(1.07);filter:saturate(1.08) brightness(1.01)}}
+@keyframes msLightSweep{0%,38%{transform:translateX(-90%) skewX(-16deg);opacity:0}46%{opacity:.72}55%{opacity:.32}68%,100%{transform:translateX(90%) skewX(-16deg);opacity:0}}
+@keyframes msLightPulse{0%,38%,70%,100%{opacity:0;transform:scale(.82)}48%{opacity:.42;transform:scale(1.06)}56%{opacity:.12;transform:scale(1.18)}}
+@keyframes msEnergyLine{0%,38%{opacity:0;transform:translateX(-65%) rotate(-12deg)}48%{opacity:.72}56%{opacity:.24}68%,100%{opacity:0;transform:translateX(65%) rotate(-12deg)}}
+@media(max-width:620px){.hero .bg-frame{inset:-5%;background-position:center center;animation-name:msBackgroundZoom;animation-duration:20s!important}.hero .flash{opacity:.8}}
+@media(prefers-reduced-motion:reduce){.hero .bg-frame,.hero .flash,.hero .flash:before,.hero .flash:after{animation:none!important}.hero .bg-frame{opacity:.9;transform:scale(1.04);filter:none}}
+</style>
 </head>
 <body>
 
