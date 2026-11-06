@@ -16,3 +16,9 @@ Open `index.html` locally to preview the website, or visit your domain after upl
 - Experience is displayed as **29+ Years**.
 - The online site-activity dashboard, admin login, update panel and backend integration have been removed.
 - This is a static portfolio website; no server-side setup is required.
+
+## Temporary Diwali greetings (India time)
+- 06 November 2026: Happy Dhanteras greeting
+- 07 November 2026: Chhoti Diwali greeting
+- 08 November 2026: Happy Diwali greeting with animated sparkle effect
+- The greeting is shown only on its scheduled date using Asia/Kolkata time and hides automatically after the date changes. The sparkle effect runs only on Diwali day.
