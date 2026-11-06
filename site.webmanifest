@@ -1,10 +1,11 @@
 {
-  "name": "Manoranjan Singh | Power Transmission & EPC Leader",
+  "name": "Manoranjan Singh | Power Transmission & EPC",
   "short_name": "Manoranjan Singh",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#06111d",
-  "theme_color": "#071321",
-  "description": "Executive portfolio of Manoranjan Singh — Power Transmission, TBCB, EPC & Infrastructure leadership.",
-  "icons": [{"src":"./manoranjan-singh-logo.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]
+  "theme_color": "#06111d",
+  "icons": [
+    {"src": "./manoranjan-singh-logo.png", "sizes": "512x512", "type": "image/png"}
+  ]
 }
