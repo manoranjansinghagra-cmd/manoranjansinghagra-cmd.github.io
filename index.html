@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Manoranjan Singh | Power Transmission & EPC Leadership</title>
 <meta name="description" content="Manoranjan Singh — senior power transmission and EPC project leader with 29+ years of experience across TBCB, transmission lines, substations, 765 kV AC and ±800 kV HVDC environments.">
 <meta name="keywords" content="Manoranjan Singh, power transmission, TBCB, EPC, 765 kV, HVDC, transmission projects, DGM, project leadership">
@@ -184,7 +187,7 @@ footer{background:#02070b!important;border-top:1px solid rgba(228,189,104,.12)!i
 </div>
 <a class="skip-link" href="#home">Skip to main content</a>
 <div class="dussehra" id="dussehra"><div class="dussehra-glow"></div><span>🏹</span><strong>Happy Dussehra</strong><small>Victory of good over evil • Peace, prosperity & success</small><span>🪔</span><button id="closeDussehra" aria-label="Close">×</button></div>
-<header class="nav"><div class="container navin"><a class="logo" href="#home" aria-label="Manoranjan Singh home"><img class="logo-mark" loading="lazy" decoding="async" src="./manoranjan-singh-logo.png" alt="Manoranjan Singh Power Transmission logo"><span>Manoranjan Singh<small>DGM & Above · Power Transmission · TBCB · EPC</small></span></a><button class="menu" id="menu">☰</button><nav class="links" id="links"><a href="#home">Home</a><a href="#about">Profile</a><a href="#projects">Projects</a><a href="#awards">Awards</a><a href="#executive-command">Executive</a><a href="#career">Career</a><a href="#recruiter">Recruiter</a><a href="#contact">Contact</a><a href="#executive-value">Executive Value</a></nav><div class="nav-actions"><button class="icon recruiter-toggle" id="recruiterToggle" type="button" title="Open recruiter view">Recruiter View</button><button class="icon" id="theme" type="button">☼ / ☾</button><button class="icon" id="motionToggle" type="button" title="Pause background motion">Pause Motion</button></div></div></header>
+<header class="nav"><div class="container navin"><a class="logo" href="#home" aria-label="Manoranjan Singh home"><img class="logo-mark" loading="lazy" decoding="async" src="./manoranjan-singh-logo.png" alt="Manoranjan Singh Power Transmission logo"><span>Manoranjan Singh<small>DGM & Above · Power Transmission · TBCB · EPC</small></span></a><button class="menu" id="menu">☰</button><nav class="links" id="links"><a href="#home">Home</a><a href="#about">Profile</a><a href="#projects">Projects</a><a href="#awards">Awards</a><a href="#executive-command">Executive</a><a href="#career">Career</a><a href="#recruiter">Recruiter</a><a href="#contact">Contact</a><a href="#executive-value">Executive Value</a></nav><div class="nav-actions"><button class="icon recruiter-toggle" id="recruiterToggle" type="button" title="Open recruiter view">Recruiter View</button><button class="icon" id="siteRefresh" type="button" title="Load the latest website version">↻ Refresh</button><button class="icon" id="theme" type="button">☼ / ☾</button><button class="icon" id="motionToggle" type="button" title="Pause background motion">Pause Motion</button></div></div></header>
 
 <main>
 <div class="executive-strip" role="status" aria-label="Executive profile summary"><div class="container executive-strip-inner"><span><b>29+ Years</b> Leadership</span><span><b>25+ Lines</b> Energized</span><span><b>Rs. 3,500 Cr+</b> Project Portfolio</span><span><b>765 kV / ±800 kV HVDC</b> Exposure</span><span class="strip-open"><i></i> Executive Profile · November 2026</span></div></div>
@@ -517,6 +520,18 @@ document.querySelectorAll('.award [data-lightbox],.rw-feature [data-lightbox]').
 })();
 </script>
 
+<script id="site-refresh-cache-bust">
+(function(){
+  const btn=document.getElementById('siteRefresh');
+  if(!btn) return;
+  btn.addEventListener('click',function(){
+    const url=new URL(window.location.href);
+    url.searchParams.set('site_refresh',Date.now().toString());
+    url.hash=window.location.hash;
+    window.location.replace(url.toString());
+  });
+})();
+</script>
 </body></html>
 <style>
 @media print{
