@@ -1,10 +1,10 @@
 BEGIN:VCARD
 VERSION:3.0
+N:Singh;Manoranjan;;;
 FN:Manoranjan Singh
-TITLE:Deputy General Manager
-ORG:Karamtara Engineering Limited
-TEL;TYPE=CELL:+919456044444
-TEL;TYPE=CELL:+919430372377
-EMAIL:msingh@manoranjansingh.in
-URL:https://manoranjansingh.in
+TITLE:Power Transmission & EPC Project Leader
+TEL;TYPE=CELL,VOICE:+919456044444
+TEL;TYPE=CELL,VOICE:+919430372377
+EMAIL;TYPE=INTERNET:msingh@manoranjansingh.in
+URL:https://manoranjansingh.in/
 END:VCARD

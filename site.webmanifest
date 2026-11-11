@@ -1,11 +1,11 @@
 {
-  "name": "Manoranjan Singh | Power Transmission & EPC",
+  "name": "Manoranjan Singh | Power Transmission & EPC Leadership",
   "short_name": "Manoranjan Singh",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#06111d",
-  "theme_color": "#06111d",
+  "background_color": "#071321",
+  "theme_color": "#071321",
   "icons": [
-    {"src": "./manoranjan-singh-logo.png", "sizes": "512x512", "type": "image/png"}
+    { "src": "./manoranjan-singh-logo.png?v=44", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ]
 }

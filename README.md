@@ -1,24 +1,21 @@
-# Manoranjan Singh — Professional Portfolio Website
+# Manoranjan Singh — V44 Professional Portfolio Edition
 
 ## Deployment
-Upload all files and folders in this ZIP to the public root directory of your web hosting account.
+Upload all files, including hidden files `.htaccess` and `_headers`, to the website public root. Replace the existing files. Keep the folder structure unchanged.
 
-Open `index.html` locally to preview the website, or visit your domain after uploading.
+## V44 updates
+- Executive portfolio overview highlighting 29+ years, ₹3,500 Cr+ portfolio, 765 kV AC and ±800 kV HVDC exposure.
+- Enhanced portfolio presentation, responsive impact cards and improved executive visual hierarchy.
+- Refined transmission-tower background zoom and light-sweep animation, with the existing pause-motion control retained.
+- Scroll progress indicator and Back to Top control.
+- Versioned local image references and cache headers: HTML always revalidates while versioned assets can be cached efficiently.
+- Removed stale service-worker registration to avoid an old offline copy being served.
+- Existing project history, award gallery, contact information and responsive navigation retained.
 
-## Included
-- Responsive executive portfolio website
-- Professional power transmission line background with animated visual effect
-- Career history, project portfolio, technical competencies and awards
-- Contact links and downloadable vCard
-- Profile photo, logo and award images
+## Important profile accuracy
+This edition does not add any unconfirmed new employer or joining claim. The career timeline remains as already documented in the source website.
 
-## Notes
-- Experience is displayed as **29+ Years**.
-- The online site-activity dashboard, admin login, update panel and backend integration have been removed.
-- This is a static portfolio website; no server-side setup is required.
-
-## Temporary Diwali greetings (India time)
-- 06 November 2026: Happy Dhanteras greeting
-- 07 November 2026: Chhoti Diwali greeting
-- 08 November 2026: Happy Diwali greeting with animated sparkle effect
-- The greeting is shown only on its scheduled date using Asia/Kolkata time and hides automatically after the date changes. The sparkle effect runs only on Diwali day.
+## Hosting notes
+- Apache/cPanel: upload `.htaccess`.
+- Netlify: upload `_headers`.
+- If Cloudflare is enabled, purge its cache once after deployment.
