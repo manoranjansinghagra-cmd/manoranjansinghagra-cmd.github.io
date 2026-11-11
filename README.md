@@ -1,21 +1,8 @@
-# Manoranjan Singh — V44 Professional Portfolio Edition
+MANORANJAN SINGH — V45 SIGNATURE EXECUTIVE PORTFOLIO
 
-## Deployment
-Upload all files, including hidden files `.htaccess` and `_headers`, to the website public root. Replace the existing files. Keep the folder structure unchanged.
+Upload all files, including hidden .htaccess and _headers, to public_html or the configured Netlify publish directory, replacing old files.
 
-## V44 updates
-- Executive portfolio overview highlighting 29+ years, ₹3,500 Cr+ portfolio, 765 kV AC and ±800 kV HVDC exposure.
-- Enhanced portfolio presentation, responsive impact cards and improved executive visual hierarchy.
-- Refined transmission-tower background zoom and light-sweep animation, with the existing pause-motion control retained.
-- Scroll progress indicator and Back to Top control.
-- Versioned local image references and cache headers: HTML always revalidates while versioned assets can be cached efficiently.
-- Removed stale service-worker registration to avoid an old offline copy being served.
-- Existing project history, award gallery, contact information and responsive navigation retained.
+Premium navy/champagne visual refinement; responsive layout; transmission tower background zoom and light sweep; scroll progress and back-to-top controls; retained profile, career, project, recognition and contact sections; versioned image references. No unconfirmed future-employment claim is added.
 
-## Important profile accuracy
-This edition does not add any unconfirmed new employer or joining claim. The career timeline remains as already documented in the source website.
-
-## Hosting notes
-- Apache/cPanel: upload `.htaccess`.
-- Netlify: upload `_headers`.
-- If Cloudflare is enabled, purge its cache once after deployment.
+After deployment, purge hosting/CDN cache once if enabled. Visit https://manoranjansingh.in and test desktop and mobile. If an old page persists, use Ctrl+Shift+R once.
+Contact: msingh@manoranjansingh.in
