@@ -1,8 +1,22 @@
-MANORANJAN SINGH — V45 SIGNATURE EXECUTIVE PORTFOLIO
+MANORANJAN SINGH — V46 ADVANCED EXECUTIVE PORTFOLIO
+===================================================
+This package upgrades the V45 website with an interactive Project Experience Explorer.
 
-Upload all files, including hidden .htaccess and _headers, to public_html or the configured Netlify publish directory, replacing old files.
+New feature:
+- Search project briefs by project name, voltage or keyword.
+- Filter by TBCB, 765 kV, 400 kV, 220 kV, 132 kV and HVDC.
+- Open a modal brief for each listed project.
+- Responsive cards, keyboard Escape close, accessible labels and no external JS dependency.
 
-Premium navy/champagne visual refinement; responsive layout; transmission tower background zoom and light sweep; scroll progress and back-to-top controls; retained profile, career, project, recognition and contact sections; versioned image references. No unconfirmed future-employment claim is added.
+Existing profile, career, awards, background motion, contact and cache features are retained from V45.
+Project briefs are limited to details already represented in the published profile. Please review project wording before publishing if any role dates or scopes have changed.
 
-After deployment, purge hosting/CDN cache once if enabled. Visit https://manoranjansingh.in and test desktop and mobile. If an old page persists, use Ctrl+Shift+R once.
-Contact: msingh@manoranjansingh.in
+DEPLOYMENT
+1. Extract the ZIP.
+2. Upload all files and folders to public_html / site publish directory, replacing existing website files.
+3. Upload hidden .htaccess and _headers too.
+4. Purge CDN/hosting cache once if enabled.
+5. Open the website and test the Project Experience section on desktop and mobile.
+
+Website: https://manoranjansingh.in
+Email: msingh@manoranjansingh.in
