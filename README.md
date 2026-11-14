@@ -1,22 +1,25 @@
-MANORANJAN SINGH — V47 FINAL JOINING UPDATE
+MANORANJAN SINGH — V48 CURRENT EMPLOYMENT UPDATE
 
 CURRENT ROLE
 Karamtara Engineering Limited
 Deputy General Manager – Projects (Execution)
 Gangapur City, Rajasthan
 ±800 kV HVDC Transmission Line package, part of the Fatehpur–Bhadla project of Adani Energy Solutions Limited.
-Joining date: 17 November 2026 (as supplied).
 
-Website updates:
-- Current Karamtara assignment added at the top of the career timeline.
-- Hero headline and introduction updated.
-- Fatehpur–Bhadla HVDC project added to the interactive Project Explorer.
-- Recruiter quick view and contact CTA updated.
-- Existing awards, career history, project explorer, background effects and responsive layout retained.
-- Resume is not publicly linked; visitors are invited to request it.
+This release reflects the user's confirmation that he has joined Karamtara Engineering Limited:
+- Career timeline now shows Karamtara as the current role (November 2026 — Present).
+- The role is marked CURRENT ROLE, not a planned/future assignment.
+- Homepage introduction, current-role call-to-action and project brief reflect active employment.
+- Interactive project explorer includes the Fatehpur–Bhadla ±800 kV HVDC assignment.
+- Resume remains available on request; no public resume download is offered.
+- Existing awards, prior career history, projects, background animation, responsive layout and contact links are retained.
 
 DEPLOYMENT
-Extract ZIP and upload all files to public_html, replacing old files. Include hidden .htaccess and _headers. Purge hosting/CDN cache once if enabled. Verify on desktop and mobile.
+1. Extract this ZIP.
+2. Upload all files and folders to public_html / configured site publish directory, replacing old files.
+3. Include hidden .htaccess and _headers files.
+4. Purge hosting/CDN cache once if enabled.
+5. Check the live website on mobile and desktop.
 
 Website: https://manoranjansingh.in
 Email: msingh@manoranjansingh.in
