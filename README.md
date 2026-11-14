@@ -1,22 +1,22 @@
-MANORANJAN SINGH — V46 ADVANCED EXECUTIVE PORTFOLIO
-===================================================
-This package upgrades the V45 website with an interactive Project Experience Explorer.
+MANORANJAN SINGH — V47 FINAL JOINING UPDATE
 
-New feature:
-- Search project briefs by project name, voltage or keyword.
-- Filter by TBCB, 765 kV, 400 kV, 220 kV, 132 kV and HVDC.
-- Open a modal brief for each listed project.
-- Responsive cards, keyboard Escape close, accessible labels and no external JS dependency.
+CURRENT ROLE
+Karamtara Engineering Limited
+Deputy General Manager – Projects (Execution)
+Gangapur City, Rajasthan
+±800 kV HVDC Transmission Line package, part of the Fatehpur–Bhadla project of Adani Energy Solutions Limited.
+Joining date: 17 November 2026 (as supplied).
 
-Existing profile, career, awards, background motion, contact and cache features are retained from V45.
-Project briefs are limited to details already represented in the published profile. Please review project wording before publishing if any role dates or scopes have changed.
+Website updates:
+- Current Karamtara assignment added at the top of the career timeline.
+- Hero headline and introduction updated.
+- Fatehpur–Bhadla HVDC project added to the interactive Project Explorer.
+- Recruiter quick view and contact CTA updated.
+- Existing awards, career history, project explorer, background effects and responsive layout retained.
+- Resume is not publicly linked; visitors are invited to request it.
 
 DEPLOYMENT
-1. Extract the ZIP.
-2. Upload all files and folders to public_html / site publish directory, replacing existing website files.
-3. Upload hidden .htaccess and _headers too.
-4. Purge CDN/hosting cache once if enabled.
-5. Open the website and test the Project Experience section on desktop and mobile.
+Extract ZIP and upload all files to public_html, replacing old files. Include hidden .htaccess and _headers. Purge hosting/CDN cache once if enabled. Verify on desktop and mobile.
 
 Website: https://manoranjansingh.in
 Email: msingh@manoranjansingh.in
