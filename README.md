@@ -34,3 +34,15 @@ DEPLOYMENT
 
 Website: https://manoranjansingh.in
 Email: msingh@manoranjansingh.in
+
+
+## V51 Premium HVDC Upgrade
+- Added a dedicated cinematic transmission-tower visual for the current Fatehpur–Bhadla ±800 kV HVDC assignment.
+- Reused the visual in the current-project portfolio card and case-study panel.
+- Added a slim reading-progress indicator and a floating back-to-top control.
+- Refined the current-project image treatment, hover motion, focus visibility and mobile sizing.
+- Existing project facts, awards, career timeline, contact links, project explorer and resume-on-request workflow are retained.
+- The new transmission image is an illustrative portfolio visual, not a claim that it is a photograph from the actual work site.
+- No unconfirmed route length, tower quantities, progress percentages or milestones have been added.
+
+Upload all ZIP contents to the website's publish directory, replacing the existing files. Keep hidden hosting configuration files if your host uses them. Purge the hosting/CDN cache once after upload.
